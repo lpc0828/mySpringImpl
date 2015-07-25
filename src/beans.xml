@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id ="u" class="com.pengcheng.dao.UserDaoImpl" />
+	<bean id ="userService" class="com.pengcheng.service.UserService">
+		<properties>
+			<property name="userDao" bean="u" />
+		</properties>	
+	 </bean>
+	
+</beans>
